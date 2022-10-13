@@ -1,0 +1,85 @@
+:root {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui;
+    background-color: darkslategray;
+    color: white;
+}
+
+::placeholder {
+    margin-left: 1rem;
+    color: black;
+}
+
+a, li, button {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.main-search {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo {
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: font-size 12s;
+    
+}
+.main-logo > h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.main-logo > p {
+    transition: all 1.5s ease;
+}
+
+
+.search-bar {
+    max-width: 50vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.search-bar-main {
+    display: flex;
+    align-items: center;
+    background-color: slategray;
+    border-radius: 2rem;
+    padding-inline: 1rem;
+    border: none;
+    width: 70%;
+
+}
+.search-bar > button {
+    border: none;
+    background-color: darkcyan;
+    border: none;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.search-bar-main > input {
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    outline: none;
+}

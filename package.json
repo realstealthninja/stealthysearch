@@ -1,0 +1,8 @@
+{
+  "name": "stealthysearch",
+  "version": "1.0.0",
+  "description": "a search site based on google.",
+  "main": "index.js",
+  "author": "stealthninja",
+  "license": "MIT"
+}
