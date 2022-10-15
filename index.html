@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>stealthy search</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="popup hidden" id="popup">
+            <div class="popup-main">
+                <button class="close-button" onclick="visPopup()">X</button>
+                <h2>Add a new bookmark thingy?</h2>
+                <input type="url" id="url-box" placeholder="Example.com">
+                <input type="url" id="icon-box" placeholder="icon url">
+                <p class="hidden" id="error">uh oh! you haven't set all properties yet!</p>
+                <div class="submit"><button onclick="addTab()">sumbit</button></div>
+            </div>
+        </div>
         <main class="main-search">
             <div class="main-logo">
                     <h1>Stealthy search</h1>
@@ -17,7 +27,13 @@
                 </div>
                 <button onclick="OnSearch()">search!</button>
             </div>
+            
+            <div class="tab-group" id="tab-group">
+                <div class="tabs" id="tab-button" onclick="visPopup()">
+                    <img src="public/plus.svg">
+                </div>
+            </div>
         </main>
-        <script type="text/javascript" src="public/js/app.js"></script>
+        <script type="text/javascript" src="public/js/src/app.js" defer="true"></script>
     </body>
 </html>
